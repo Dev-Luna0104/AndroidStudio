@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "IntentObjectExtra"
-include ':app'
+rootProject.name = "ComponentesTela"
+include(":app")
+ 

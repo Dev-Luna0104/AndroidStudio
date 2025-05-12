@@ -4,39 +4,29 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Spinner;
 
 
 public class MainActivity extends Activity {
 
-    private Button btnDetalhe;
+    Button btnSalvarCadastro;
+    Spinner spnCurso;
+    String curso;
+    Intent intent;
+    Bundle bundle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnDetalhe = findViewById(R.id.btnDetalhe);
+        Button = findViewById(R.id.btnSalvarCadastro);
 
-        btnDetalhe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        Spinner = findViewById(R.id.spnCurso);
 
-                //Criar o Intent
-                Intent intent = new Intent(MainActivity.this, DetalheActivity.class);
+        configuraSpinner();
 
-                //Criar a Pessoa
-                Pessoa pessoa = new Pessoa("João", 25);
-
-                //Enviar a Pessoa para a tela Detalhe
-                intent.putExtra("pessoa", pessoa);
-
-                //Abrir a tela Detalhe
-                startActivity(intent);
-
-
-
-            }
-        });
 
     }
+
 }

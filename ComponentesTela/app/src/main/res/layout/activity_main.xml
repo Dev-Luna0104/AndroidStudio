@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+
+    <CheckBox
+        android:id="@+id/ckbhabilitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habilitar" />
+
+    <SeekBar
+        android:id="@+id/sbkvalor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        />
+
+    <TextView
+        android:id="@+id/txtvalor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#CC2424"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Nomes:" />
+
+    <Spinner
+        android:id="@+id/spnnomes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <RadioGroup
+        android:id="@+id/rgopcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/rbopcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 01"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rbopcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 02"
+            />
+
+        <RadioButton
+            android:id="@+id/rbopcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 03"
+            />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visualizar Dados"
+        android:onClick="visualizar"/>
+
+
+</LinearLayout>
